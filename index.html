@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="chat.png" type="image/png">  
+    <title>Friends chat app</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+   
+    <section class="chat__section gradient-border">
+        <div class="brand">
+            <img height="40" src="/chat.png" alt="">
+            <h1><span class="letter">F</span>riends <span class="letter">C</span>hat</h1>
+            <div class="welcome__user">
+                <h1 id="user"></h1>
+            </div>
+         
+        </div>
+        <div class="message__area"></div>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
